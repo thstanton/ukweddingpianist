@@ -71,9 +71,12 @@ export default function App() {
 
   return (
     <main className="m-10">
-      <div className="mb-3">
-        <h1 className="text-4xl">UK Wedding Pianist</h1>
-        <h2>Song Selection Form</h2>
+      <div className="flex items-center gap-2">
+        <img src="/mr.svg" className="w-16 mb-3"/>
+        <div className="mb-3 flex flex-col justify-center">
+          <h1 className="text-4xl">UK Wedding Pianist</h1>
+          <h2>Song Selection Form</h2>
+        </div>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col">
         <div className="mb-3 flex flex-col gap-3 rounded-xl border-2 border-solid border-neutral-200 p-4">
@@ -97,7 +100,7 @@ export default function App() {
           <h1 className="mb-3 font-bold">
             Select the songs you would like me to play
           </h1>
-          <div role="tablist" className="tabs tabs-bordered w-full">
+          <div role="tablist" className="tabs tabs-bordered tabs-xs md:tabs-md lg:tabs-lg max-w-full">
             <input
               type="radio"
               name="my-tabs-1"

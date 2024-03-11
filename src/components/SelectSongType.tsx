@@ -25,13 +25,13 @@ export default function SelectSongType({
       };
 
   return (
-      <div role="tabpanel" className="tab-content p-6">
-        <div className="flex flex-col md:flex-row flex-wrap">
+      <div role="tabpanel" className="tab-content p-6 w-full">
+        <div className="flex flex-col md:flex-row flex-wrap w-full">
           {songs
             .filter((song) => song.genre === genre)
             .map((song) => (
               <label
-                className="label md:w-1/2 xl:w-1/4 cursor-pointer justify-start gap-2"
+                className="label w-full md:w-1/2 xl:w-1/4 cursor-pointer justify-start gap-2"
                 key={song.id}
               >
                 <input
