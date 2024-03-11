@@ -17,27 +17,28 @@ export default function SelectSongType({
   setSongs,
   genre,
 }: SelectSongTypeProps) {
+    const handleCheckboxChange = (id: number, checked: boolean) => {
+        const updatedSongs = songs.map((song) =>
+          song.id === id ? { ...song, checked } : song
+        );
+        setSongs(updatedSongs);
+      };
+
   return (
       <div role="tabpanel" className="tab-content p-6">
         <div className="flex flex-col md:flex-row flex-wrap">
           {songs
             .filter((song) => song.genre === genre)
-            .map((song, idx) => (
+            .map((song) => (
               <label
                 className="label md:w-1/2 xl:w-1/4 cursor-pointer justify-start gap-2"
-                key={idx}
+                key={song.id}
               >
                 <input
                   type="checkbox"
                   checked={song.checked || false}
-                  onChange={(e) => {
-                    const updatedSongs = [...songs];
-                    updatedSongs[idx] = {
-                      ...song,
-                      checked: e.target.checked,
-                    };
-                    setSongs(updatedSongs);
-                  }}
+                  onChange={(e) =>
+                    handleCheckboxChange(song.id, e.target.checked)}
                 />
                 <span className="label-text">
                   {song.artist
@@ -48,6 +49,5 @@ export default function SelectSongType({
             ))}
         </div>
       </div>
-
   );
 }

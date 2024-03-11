@@ -43,7 +43,7 @@ export default function SelectSongEvent({
         {songs
           .filter((song) => song.checked)
           .map((song, idx) => (
-            <option value={song.title} key={idx}>
+            <option value={song.artist ? `${song.title} - ${song.artist}` : song.title} key={idx}>
               {song.artist ? `${song.title} - ${song.artist}` : song.title}
             </option>
           ))}

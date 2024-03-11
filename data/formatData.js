@@ -7,21 +7,44 @@
 //   "Adagio for Strings - Barber, Air on the G String - Bach, Allegro Maestoso (Water Music) - Handel, Ambre - Nils Frahm, Apanhei-Te Cavaquinho - Nazareth, Arrival of the Queen of Sheba - Handel, Ave Maria - Schubert, Ave Verum - Mozart, Birdsong - Eimaudi, Bluebird - Alexis Ffrench, Butterfly - Grieg, Canon in D - Pachelbel, Chanson de Matin - Elgar, Cinema Paradiso - Ennio Morricone, Clair de Lune - Debussy, Dance of the Hours - Ponchielli, Dawn - Marianelli, Deux Arabesques - Debussy, Dreamland - Alexis Ffrench, Etudes - Philip Glass, Experience - Einaudi, Fly - Einaudi, Footprints in the Sand - Alexis Ffrench, Forrest Gump Suite - Alan Silvestri, Grand Valse - Delibes, Gymnopedie - Satie, Heartbeats - Alexis Ffrench, I Giorni - Einaudi, Intermezzo in A - Brahms, Jesu Joy of Man’s Desiring - Bach, Kinderscenen - Schumann, La Fille Aux Cheveux de Lin - Debussy, Le Onde - Einaudi, Liebestraume - Liszt, Liz On Top Of The World - Marianelli, Love Theme - Morricone, Maestro The Holiday - Hans Zimmer, Mariage D’amour - Senneville, May Be - Yiruma, Minuet in G - Beethoven, Moment Musicaux - Schubert, Mysterious Mask - Couperin, New Moon - Alexandre Desplat, Noctures - Liszt, Nocturne - Chopin, Nuvole Bianche - Einaudi, Onset - Giles Lam, Pathetique Sonata - Beethoven, Pavane - Faure, Pie Jesu - Andrew Lloyd Webber, Prelude in C Major - Bach, Primavera - Einaudi, Recessional - Purcell, River Flows in You - Yiruma, Rivers - Alexis Ffrench, Rondeau - Purcell, Salut D’Amour - Elgar, Serenade No.4 - Schubert, Sheep May Safely Graze - Bach, Story of You - Alexis Ffrench, To a Wild Rose - MacDowell, Una Mattina - Einaudi, Waltz in A - Brahms, Wedding at Trondhaugen - Liszt, Wedding March - Mendehlsson, Wind - Brian Crain";
 // const bollywood = "Aaoge Jab tum Saajna, Ajeeb Dastaan, Ek Ladki Bheegi Bhaagi Si, Enna Sona, Gulaabi Aankhen, Hai Apna Dil toh Awaara, Hum Bewafa, Hargiz na The, Kal ho na ho, Kehte Hai Khuda Ne, Jashn-E-Bahaaraa, Maula Mere Lele Meri Jaan, Pehla Nasha, Pelli Nazar Mein Race, Rattan Zambiya’n, Rabat Kehte Hain Khuda, Tu Hi Yaar Mera, Tum Hi Ho, Tumhi Dekho Naa, Tujhe Kitna Chain Lage"
 // const filmTV = "Another Day of Sun - La La Land, A Million Dreams - The Greatest Showman, A Thousand Years - Twilight, A Whole New World - Aladdin, Always Remember Us This Way - A Star is Born, Can You Feel The Love Tonight - Lion King, City of Stars - La La Land, Colours of the Wind - Pocahontas, Comptine d’un Autre Été, L’âpres-Midi - Amelie, Feather Theme - Forrest Gump, Gabriel’s Oboe - The Mission, Glasgow Love Theme - Love Actually, Happy Ending -The Little Mermaid, How To Train Your Dragon, I Love NYE - About A Boy, I Dreamed A Dream - Les Miserables, I Get To Love You - Cinderella, Invisible - Klaus, Kissing You - Romeo & Juliet, Music of the Night - Phantom Of The Opera, My Heart Will Go On - Titanic, One Summer’s Day - Spirited Away, James Bond Themes (Various), Jurassic Park (Theme), River Flows In You - Twilight, Shallow - A Star Is Born, Sleeping at Last - Twilight, Succession (Theme), Sunrise, Sunset - Fiddler on the Roof, Tale As Old As Time - Beauty & The Beast, The Heart Asks Pleasure First - The Piano, You’ve Got A Friend In Me - Toy Story"
-const christmas = "All I Want For Christmas Is You, Driving Home for Christmas, Fairytale of New York, Have Yourself A Merry Little Christmas, Jingle Bell Rock, Last Christmas, Let it Snow, Little Drummer Boy, The Most Wonderful Time of the Year, Rockin’ Around the Xmas Tree, Santa Claus is Coming to Town, Santa Baby, Silent Night, Stay Another Day, Stop the Cavalry, This Christmas, The Christmas Song, Winter Wonderland"
+// const christmas = "All I Want For Christmas Is You, Driving Home for Christmas, Fairytale of New York, Have Yourself A Merry Little Christmas, Jingle Bell Rock, Last Christmas, Let it Snow, Little Drummer Boy, The Most Wonderful Time of the Year, Rockin’ Around the Xmas Tree, Santa Claus is Coming to Town, Santa Baby, Silent Night, Stay Another Day, Stop the Cavalry, This Christmas, The Christmas Song, Winter Wonderland"
 
-function parseSongData(data) {
-  const songArr = data.split(", ");
-  const returnArr = [];
-  songArr.forEach((song) => {
-    const artistTitle = song.split(" - ");
-    returnArr.push({
-      title: artistTitle[0],
-      artist: artistTitle[1],
-      genre: "Christmas",
-    });
-  });
-  return returnArr;
-}
+// function parseSongData(data) {
+//   const songArr = data.split(", ");
+//   const returnArr = [];
+//   songArr.forEach((song) => {
+//     const artistTitle = song.split(" - ");
+//     returnArr.push({
+//       title: artistTitle[0],
+//       artist: artistTitle[1],
+//       genre: "Christmas",
+//     });
+//   });
+//   return returnArr;
+// }
 
-const result = parseSongData(christmas);
-console.log(JSON.stringify(result));
+// const result = parseSongData(christmas);
+// console.log(JSON.stringify(result));
+
+const songData = [
+  { title: "Let it Snow", genre: "Christmas" },
+  { title: "Little Drummer Boy", genre: "Christmas" },
+  { title: "The Most Wonderful Time of the Year", genre: "Christmas" },
+  { title: "Rockin’ Around the Xmas Tree", genre: "Christmas" },
+  { title: "Santa Claus is Coming to Town", genre: "Christmas" },
+  { title: "Santa Baby", genre: "Christmas" },
+  { title: "Silent Night", genre: "Christmas" },
+  { title: "Stay Another Day", genre: "Christmas" },
+  { title: "Stop the Cavalry", genre: "Christmas" },
+  { title: "This Christmas", genre: "Christmas" },
+  { title: "The Christmas Song", genre: "Christmas" },
+  { title: "Winter Wonderland", genre: "Christmas" },
+];
+
+const formattedData = []
+let id = 300;
+songData.forEach((song) => {
+  formattedData.push({ id: id, ...song });
+  id++;
+});
+console.log(formattedData)

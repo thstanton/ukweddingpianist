@@ -3,8 +3,9 @@ import { songData } from "../data/songs";
 import { FormEvent, useState } from "react";
 import SelectSongType from "./components/SelectSongType";
 import SelectSongEvent from "./components/SelectSongEvent";
+import { useNavigate } from "react-router-dom";
 
-function App() {
+export default function App() {
   const [name, setName] = useState<string>();
   const [email, setEmail] = useState<string>();
   const [songs, setSongs] = useState(songData);
@@ -13,21 +14,59 @@ function App() {
   const [signingSong2, setSigningSong2] = useState<string>();
   const [signingSong3, setSigningSong3] = useState<string>();
   const [recessionalSong, setRecessionalSong] = useState<string>();
+  const [notes, setNotes] = useState<string>();
+  const navigate = useNavigate();
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const selection = {
-      name,
-      email,
-      processionalSong,
-      signingSong1,
-      signingSong2,
-      signingSong3,
-      recessionalSong,
-      songs: songs.filter((song) => song.checked),
+    const requestList = songs
+      .filter((song) => song.checked)
+      .map(
+        (song) =>
+          `<li>${song.title}${song.artist ? ` - ${song.artist}` : ""}</li>`,
+      )
+      .join("");
+
+    const data = {
+      service_id: "default_service",
+      template_id: `${import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID}`,
+      user_id: `${import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY}`,
+      template_params: {
+        sender_name: name,
+        sender_email: email,
+        message: `
+          <h1>Requests</h1>
+          <ul>
+            ${requestList}
+          </ul>
+          <p>Processional: <strong>${processionalSong}</strong></p>
+          <p>Signing Register (first song): <strong>${signingSong1}</strong></p>
+          <p>Signing Register (second song): <strong>${signingSong2}</strong></p>
+          <p>Signing Register (third song): <strong>${signingSong3}</strong></p>
+          <p>Recessional: <strong>${recessionalSong}</strong></p>
+          <p>Notes: <span>${notes}</span></p>
+          `,
+      },
     };
-    console.log(selection);
-    console.log("Submit");
+
+    try {
+      const response = await fetch(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        },
+      );
+      if (response.status !== 200) {
+        throw new Error("Email not sent");
+      }
+      navigate("/complete");
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   return (
@@ -37,23 +76,27 @@ function App() {
         <h2>Song Selection Form</h2>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col">
-        <div className="rounded-xl border-2 border-solid border-neutral-200 p-4 mb-3 flex flex-col gap-3">
-          <h1 className="font-bold mb-3">Enter your details:</h1>
+        <div className="mb-3 flex flex-col gap-3 rounded-xl border-2 border-solid border-neutral-200 p-4">
+          <h1 className="mb-3 font-bold">Enter your details:</h1>
           <input
             placeholder="Your Name"
             className="input input-bordered"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           />
           <input
             placeholder="Your Email"
             className="input input-bordered"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
-        <div className="rounded-xl border-2 border-solid border-neutral-200 p-4 min-h-96 mb-3">
-          <h1 className="font-bold mb-3">Select the songs you would like me to play</h1>
+        <div className="mb-3 min-h-96 rounded-xl border-2 border-solid border-neutral-200 p-4">
+          <h1 className="mb-3 font-bold">
+            Select the songs you would like me to play
+          </h1>
           <div role="tablist" className="tabs tabs-bordered w-full">
             <input
               type="radio"
@@ -162,6 +205,8 @@ function App() {
           className="textarea textarea-bordered mb-3"
           rows={4}
           placeholder="Enter any notes you have for me here"
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
         />
 
         {/* Submit Button */}
@@ -172,5 +217,3 @@ function App() {
     </main>
   );
 }
-
-export default App;
