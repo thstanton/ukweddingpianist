@@ -70,7 +70,7 @@ export default function App() {
   }
 
   return (
-    <main className="m-10">
+    <main className="mx-10 mt-3">
       <div className="flex items-center gap-2">
         <img src="/mr.svg" className="w-16 mb-3"/>
         <div className="mb-3 flex flex-col justify-center">
@@ -118,14 +118,6 @@ export default function App() {
               name="my-tabs-1"
               role="tab"
               className="tab"
-              aria-label="Jazz"
-            />
-            <SelectSongType songs={songs} setSongs={setSongs} genre="Jazz" />
-            <input
-              type="radio"
-              name="my-tabs-1"
-              role="tab"
-              className="tab"
               aria-label="Classical"
             />
             <SelectSongType
@@ -138,13 +130,9 @@ export default function App() {
               name="my-tabs-1"
               role="tab"
               className="tab"
-              aria-label="Bollywood"
+              aria-label="Jazz"
             />
-            <SelectSongType
-              songs={songs}
-              setSongs={setSongs}
-              genre="Bollywood"
-            />
+            <SelectSongType songs={songs} setSongs={setSongs} genre="Jazz" />
             <input
               type="radio"
               name="my-tabs-1"
@@ -162,12 +150,12 @@ export default function App() {
               name="my-tabs-1"
               role="tab"
               className="tab"
-              aria-label="Christmas"
+              aria-label="Bollywood"
             />
             <SelectSongType
               songs={songs}
               setSongs={setSongs}
-              genre="Christmas"
+              genre="Bollywood"
             />
           </div>
         </div>
