@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+      {
+        "source": "/bollywood",
+        "destination": "/?genre=bollywood"
+      },
+      {
+        "source": "/christmas",
+        "destination": "/?genre=christmas"
+      }
+    ]
+  }

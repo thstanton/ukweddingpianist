@@ -3,9 +3,11 @@ import { songData } from "../data/songs";
 import { FormEvent, useState } from "react";
 import SelectSongType from "./components/SelectSongType";
 import SelectSongEvent from "./components/SelectSongEvent";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 export default function App() {
+  const [searchParams] = useSearchParams();
+  console.log(searchParams.get("genre"));
   const [name, setName] = useState<string>();
   const [email, setEmail] = useState<string>();
   const [songs, setSongs] = useState(songData);
@@ -72,7 +74,7 @@ export default function App() {
   return (
     <main className="mx-10 mt-3">
       <div className="flex items-center gap-2">
-        <img src="/mr.svg" className="w-16 mb-3"/>
+        <img src="/mr.svg" className="mb-3 w-16" />
         <div className="mb-3 flex flex-col justify-center">
           <h1 className="text-4xl">UK Wedding Pianist</h1>
           <h2>Song Selection Form</h2>
@@ -100,7 +102,10 @@ export default function App() {
           <h1 className="mb-3 font-bold">
             Select the songs you would like me to play
           </h1>
-          <div role="tablist" className="tabs tabs-bordered tabs-xs md:tabs-md lg:tabs-lg max-w-full">
+          <div
+            role="tablist"
+            className="tabs tabs-bordered tabs-xs max-w-full md:tabs-md lg:tabs-lg"
+          >
             <input
               type="radio"
               name="my-tabs-1"
@@ -145,18 +150,38 @@ export default function App() {
               setSongs={setSongs}
               genre="Film, TV and Musicals"
             />
-            <input
-              type="radio"
-              name="my-tabs-1"
-              role="tab"
-              className="tab"
-              aria-label="Bollywood"
-            />
-            <SelectSongType
-              songs={songs}
-              setSongs={setSongs}
-              genre="Bollywood"
-            />
+            {searchParams.has("genre", "bollywood") && (
+              <>
+                <input
+                  type="radio"
+                  name="my-tabs-1"
+                  role="tab"
+                  className="tab"
+                  aria-label="Bollywood"
+                />
+                <SelectSongType
+                  songs={songs}
+                  setSongs={setSongs}
+                  genre="Bollywood"
+                />
+              </>
+            )}
+            {searchParams.has("genre", "christmas") && (
+              <>
+                <input
+                  type="radio"
+                  name="my-tabs-1"
+                  role="tab"
+                  className="tab"
+                  aria-label="Christmas"
+                />
+                <SelectSongType
+                  songs={songs}
+                  setSongs={setSongs}
+                  genre="Christmas"
+                />
+              </>
+            )}
           </div>
         </div>
         {/* Processional, signing register x3, recessional */}
