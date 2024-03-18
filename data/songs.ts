@@ -1533,5 +1533,13 @@ export const songData: Song[] = [
   { id: 309, title: 'This Christmas', genre: 'Christmas' },
   { id: 310, title: 'The Christmas Song', genre: 'Christmas' },
   { id: 311, title: 'Winter Wonderland', genre: 'Christmas' },
-  { id: 312, title: 'One Summer's Day', genre: 'Film, TV and Musicals' }
+  { id: 312, title: 'One Summer's Day', 
+  artist: 'Spirited Away', 
+  genre: 'Film, TV and Musicals'
+},
+  {
+    id: 313, title: 'Pure Shores', 
+    artist: 'All Saints', 
+    genre: 'Contemporary' 
+  },
 ];
