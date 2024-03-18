@@ -1535,8 +1535,14 @@ export const songData: Song[] = [
   { id: 311, title: 'Winter Wonderland', genre: 'Christmas' },
  
   {
-    id: 313, title: 'Pure Shores', 
+    id: 312, title: 'Pure Shores', 
     artist: 'All Saints', 
     genre: 'Contemporary' 
   },
+  {
+    id: 313, 
+    title: 'Moonlight Serenade'
+      artist: 'Glenn Miller'
+genre: 'Jazz'
+},
 ];
