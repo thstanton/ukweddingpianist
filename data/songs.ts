@@ -1532,5 +1532,6 @@ export const songData: Song[] = [
   { id: 308, title: 'Stop the Cavalry', genre: 'Christmas' },
   { id: 309, title: 'This Christmas', genre: 'Christmas' },
   { id: 310, title: 'The Christmas Song', genre: 'Christmas' },
-  { id: 311, title: 'Winter Wonderland', genre: 'Christmas' }
+  { id: 311, title: 'Winter Wonderland', genre: 'Christmas' },
+  { id: 312, title: 'One Summer's Day', genre: 'Film, TV and Musicals' }
 ];
