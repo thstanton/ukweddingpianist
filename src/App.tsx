@@ -7,7 +7,6 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 
 export default function App() {
   const [searchParams] = useSearchParams();
-  console.log(searchParams.get("genre"));
   const [name, setName] = useState<string>();
   const [email, setEmail] = useState<string>();
   const [songs, setSongs] = useState(songData);
@@ -18,6 +17,8 @@ export default function App() {
   const [recessionalSong, setRecessionalSong] = useState<string>();
   const [notes, setNotes] = useState<string>();
   const navigate = useNavigate();
+  // Put songs in alphabetical order of title
+  songs.sort((a, b) => a.title.localeCompare(b.title));
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
