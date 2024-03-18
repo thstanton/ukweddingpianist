@@ -1541,8 +1541,8 @@ export const songData: Song[] = [
   },
   {
     id: 313, 
-    title: 'Moonlight Serenade'
-      artist: 'Glenn Miller'
-genre: 'Jazz'
+    title: 'Moonlight Serenade',
+      artist: 'Glenn Miller',
+genre: 'Jazz',
 },
 ];
