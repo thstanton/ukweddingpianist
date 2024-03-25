@@ -1545,4 +1545,28 @@ export const songData: Song[] = [
       artist: 'Glenn Miller',
 genre: 'Jazz',
 },
+   {
+    id: 314,
+    title: 'What Was I Made For',
+    artist: 'Barbie',
+    genre: 'Film, TV & Musicals'
+  },
+   {
+    id: 315,
+    title: 'Shotgun',
+    artist: 'George Ezra',
+    genre: 'Contemporary'
+  },
+   {
+    id: 316,
+    title: 'Budapest',
+    artist: 'George Ezra',
+    genre: 'Contemporary'
+  },
+   {
+    id: 317,
+    title: 'Both Sides Now',
+    artist: 'Joni Mitchell',
+    genre: 'Contemporary'
+  },
 ];
