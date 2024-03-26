@@ -1560,10 +1560,4 @@ export const songData: Song[] = [
     artist: "Joni Mitchell",
     genre: "Contemporary",
   },
-  {
-    id: 318,
-    title: "What Was I Made For",
-    artist: "Barbie",
-    genre: "Film, TV & Musicals",
-  },
 ];
