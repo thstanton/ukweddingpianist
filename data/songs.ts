@@ -1572,4 +1572,16 @@ export const songData: Song[] = [
     artist: "Lana Del Ray",
     genre: "Contemporary",
   },
+  {
+    id: 320,
+    title: "Video Games",
+    artist: "Lana Del Ray",
+    genre: "Contemporary",
+  },
+  {
+    id: 321,
+    title: "Spring",
+    artist: "Max Richter",
+    genre: "Classical",
+  },
 ];
