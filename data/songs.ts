@@ -1536,7 +1536,7 @@ export const songData: Song[] = [
   
   {  id: 321,  title: "Spring",   artist: "Max Richter",   genre: "Classical",  },
   
-  {   id: 322,  title: "Star Wars Themes",  artist: "John Williams",  genre: "Film, TV and Musical",  },
+  {   id: 322,  title: "Star Wars Themes",  artist: "John Williams",  genre: "Film, TV and Musicals",  },
   
-  {    id: 323,  title: "Lord of the Rings Theme",   artist: "Howard Shore",   genre: "Film, TV and Musical",  },
+  {    id: 323,  title: "Lord of the Rings Theme",   artist: "Howard Shore",   genre: "Film, TV and Musicals",  },
 ];
