@@ -1560,4 +1560,16 @@ export const songData: Song[] = [
     artist: "Joni Mitchell",
     genre: "Contemporary",
   },
+   {
+    id: 318,
+    title: "Diamonds",
+    artist: "Rihanna",
+    genre: "Contemporary",
+   },
+  {
+    id: 319,
+    title: "Say Yes To Heaven",
+    artist: "Lana Del Ray",
+    genre: "Contemporary",
+  },
 ];
