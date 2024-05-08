@@ -1542,4 +1542,8 @@ export const songData: Song[] = [
   {  id: 324,  title: "Avril 14th", artist: "Aphex Twin", genre: "Contemporary", },
   { id: 325, title: "You Send Me", artist: "Aretha Franklin", genre: "Jazz", },
   { id: 326, title: "You & Me Song", artist: "The Wannadies", genre: "Contemporary":, },
+  { id: 327, title: "Passionfruit", artist: "Drake", genre: "Contemporary", },
+  { id: 328, title: "U Remind Me", artist: "Usher", genre: "Contemporary", },
+  { id: 329, title: "One Dance", artist: "Drake", genre: "Contemporary", },
+{ id: 330, title: "Pink + White", artist: "Frank Ocean", genre: "Contemporary", },
 ];
