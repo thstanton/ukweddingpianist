@@ -1471,75 +1471,144 @@ export const songData: Song[] = [
     genre: "Film, TV and Musicals",
   },
   { id: 289, title: "Sunrise", genre: "Film, TV and Musicals" },
-  
-  {   id: 290,   title: "Sunset",   artist: "Fiddler on the Roof",   genre: "Film, TV and Musicals",  },
-  
-  {    id: 291,    title: "Tale As Old As Time",    artist: "Beauty & The Beast",    genre: "Film, TV and Musicals",  },
-  
-  {    id: 292,   title: "The Heart Asks Pleasure First",   artist: "The Piano",   genre: "Film, TV and Musicals",  },
-  
-  {    id: 293,    title: "You’ve Got A Friend In Me",   artist: "Toy Story",   genre: "Film, TV and Musicals",  },
-  
-  {    id: 294,   title: "All I Want For Christmas Is You",    genre: "Christmas",  },
-  
+
+  {
+    id: 290,
+    title: "Sunset",
+    artist: "Fiddler on the Roof",
+    genre: "Film, TV and Musicals",
+  },
+
+  {
+    id: 291,
+    title: "Tale As Old As Time",
+    artist: "Beauty & The Beast",
+    genre: "Film, TV and Musicals",
+  },
+
+  {
+    id: 292,
+    title: "The Heart Asks Pleasure First",
+    artist: "The Piano",
+    genre: "Film, TV and Musicals",
+  },
+
+  {
+    id: 293,
+    title: "You’ve Got A Friend In Me",
+    artist: "Toy Story",
+    genre: "Film, TV and Musicals",
+  },
+
+  { id: 294, title: "All I Want For Christmas Is You", genre: "Christmas" },
+
   { id: 295, title: "Driving Home for Christmas", genre: "Christmas" },
-  
+
   { id: 296, title: "Fairytale of New York", genre: "Christmas" },
-  
-  {   id: 297,   title: "Have Yourself A Merry Little Christmas",    genre: "Christmas",  },
-  
+
+  {
+    id: 297,
+    title: "Have Yourself A Merry Little Christmas",
+    genre: "Christmas",
+  },
+
   { id: 298, title: "Jingle Bell Rock", genre: "Christmas" },
-  
+
   { id: 299, title: "Last Christmas", genre: "Christmas" },
-  
+
   { id: 300, title: "Let it Snow", genre: "Christmas" },
-  
+
   { id: 301, title: "Little Drummer Boy", genre: "Christmas" },
-  
-  {    id: 302,    title: "The Most Wonderful Time of the Year",    genre: "Christmas",  },
-  
-  {    id: 303,    title: "Rockin’ Around the Xmas Tree",    genre: "Christmas",  },
-  
-  {    id: 304,    title: "Santa Claus is Coming to Town",    genre: "Christmas",  },
-  
+
+  { id: 302, title: "The Most Wonderful Time of the Year", genre: "Christmas" },
+
+  { id: 303, title: "Rockin’ Around the Xmas Tree", genre: "Christmas" },
+
+  { id: 304, title: "Santa Claus is Coming to Town", genre: "Christmas" },
+
   { id: 305, title: "Santa Baby", genre: "Christmas" },
-  
+
   { id: 306, title: "Silent Night", genre: "Christmas" },
-  
+
   { id: 307, title: "Stay Another Day", genre: "Christmas" },
-  
+
   { id: 308, title: "Stop the Cavalry", genre: "Christmas" },
-  
+
   { id: 309, title: "This Christmas", genre: "Christmas" },
-  
+
   { id: 310, title: "The Christmas Song", genre: "Christmas" },
-  
+
   { id: 311, title: "Winter Wonderland", genre: "Christmas" },
-  
-  {    id: 312,    title: "Pure Shores",    artist: "All Saints",    genre: "Contemporary",  },
-  
-  {    id: 313,    title: "Moonlight Serenade",    artist: "Glenn Miller",    genre: "Jazz",  },
-  
-  {    id: 314,    title: "What Was I Made For",    artist: "Barbie",    genre: "Film, TV and Musicals",  },
-  
+
+  {
+    id: 312,
+    title: "Pure Shores",
+    artist: "All Saints",
+    genre: "Contemporary",
+  },
+
+  {
+    id: 313,
+    title: "Moonlight Serenade",
+    artist: "Glenn Miller",
+    genre: "Jazz",
+  },
+
+  {
+    id: 314,
+    title: "What Was I Made For",
+    artist: "Barbie",
+    genre: "Film, TV and Musicals",
+  },
+
   { id: 315, title: "Shotgun", artist: "George Ezra", genre: "Contemporary" },
-  
+
   { id: 316, title: "Budapest", artist: "George Ezra", genre: "Contemporary" },
-  
-  {    id: 317,    title: "Both Sides Now",    artist: "Joni Mitchell",    genre: "Contemporary",  },
-  
-   {    id: 318,    title: "Diamonds",   artist: "Rihanna",    genre: "Contemporary",   },
-  
-  {   id: 319,   title: "Say Yes To Heaven",   artist: "Lana Del Ray",    genre: "Contemporary",  },
-  
-  {   id: 320,   title: "Video Games",   artist: "Lana Del Ray",   genre: "Contemporary",  },
-  
-  {  id: 321,  title: "Spring",   artist: "Max Richter",   genre: "Classical",  },
-  
-  {   id: 322,  title: "Star Wars Themes",  artist: "John Williams",  genre: "Film, TV and Musicals",  },
-  
-  {   id: 323,  title: "Lord of the Rings Theme",   artist: "Howard Shore",   genre: "Film, TV and Musicals",  },
-  {  id: 324,  title: "Avril 14th", artist: "Aphex Twin", genre: "Contemporary", },
-  { id: 325, title: "You Send Me", artist: "Aretha Franklin", genre: "Jazz", },
-  { id: 326, title: "You & Me Song", artist: "The Wannadies", genre: "Contemporary":, },
+
+  {
+    id: 317,
+    title: "Both Sides Now",
+    artist: "Joni Mitchell",
+    genre: "Contemporary",
+  },
+
+  { id: 318, title: "Diamonds", artist: "Rihanna", genre: "Contemporary" },
+
+  {
+    id: 319,
+    title: "Say Yes To Heaven",
+    artist: "Lana Del Ray",
+    genre: "Contemporary",
+  },
+
+  {
+    id: 320,
+    title: "Video Games",
+    artist: "Lana Del Ray",
+    genre: "Contemporary",
+  },
+
+  { id: 321, title: "Spring", artist: "Max Richter", genre: "Classical" },
+
+  {
+    id: 322,
+    title: "Star Wars Themes",
+    artist: "John Williams",
+    genre: "Film, TV and Musicals",
+  },
+
+  {
+    id: 323,
+    title: "Lord of the Rings Theme",
+    artist: "Howard Shore",
+    genre: "Film, TV and Musicals",
+  },
+  { id: 324, title: "Avril 14th", artist: "Aphex Twin", genre: "Contemporary" },
+  { id: 325, title: "You Send Me", artist: "Aretha Franklin", genre: "Jazz" },
+  {
+    id: 326,
+    title: "You & Me Song",
+    artist: "The Wannadies",
+    genre: "Contemporary",
+  },
 ];
