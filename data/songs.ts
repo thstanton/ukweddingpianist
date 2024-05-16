@@ -1620,4 +1620,7 @@ export const songData: Song[] = [
     artist: "Frank Ocean",
     genre: "Contemporary",
   },
+  { id: 331, title: "Dos Oreguitas", artist: "Encanto", genre: "Film, TV and Musicals" },
+  { id: 332, title: "You To Me Are Everything", artist: "The Real Thing", genre: "Contemporary" },
+  { id: 333, title: "Pure Imagination", artist: "Willy Wonka", genre: "Film, TV and Musicals" },
 ];
