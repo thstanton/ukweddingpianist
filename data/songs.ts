@@ -1620,4 +1620,17 @@ export const songData: Song[] = [
     artist: "Frank Ocean",
     genre: "Contemporary",
   },
+  { id: 331, title: "Dos Oreguitas", artist: "Encanto", genre: "Film, TV and Musicals" },
+  { id: 332, title: "You To Me Are Everything", artist: "The Real Thing", genre: "Contemporary" },
+  { id: 333, title: "Pure Imagination", artist: "Willy Wonka", genre: "Film, TV and Musicals" },
+  { id: 334, title: "You're My Best Friend", artist: "Queen", genre: "Contemporary" },
+  { id: 335, title: "Iris", artist: "Goo Goo Dolls", genre: "Contemporary" },
+  { id: 336, title: "The Suite", artist: "Downton Abbey", genre: "Film, TV and Musicals" },
+  { id: 337, title: "The Scientist", artist: "Coldplay", genre: "Contemporary" },
+  { id: 338, title: "Angels", artist: "Robbie Williams", genre: "Contemporary" },
+  { id: 339, title: "Send Me On My Way", artist: "Shrek", genre: "Film, TV and Musicals" },
+  { id: 340, title: "Wildest Dreams", artist: "Taylor Swift", genre: "Contemporary" },
+  { id: 341, title: "Go The Distance", artist: "Hercules", genre: "Film, TV and Musicals" },
+  { id: 342, title: "Blank Space", artist: "Taylor Swift", genre: "Contemporary" },
+  
 ];
