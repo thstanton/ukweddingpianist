@@ -9,6 +9,7 @@ export default function App() {
   const [searchParams] = useSearchParams();
   const [name, setName] = useState<string>();
   const [email, setEmail] = useState<string>();
+  const [date, setDate] = useState<string>();
   const [songs, setSongs] = useState(songData);
   const [processionalSong, setProcessionalSong] = useState<string>();
   const [signingSong1, setSigningSong1] = useState<string>();
@@ -38,6 +39,7 @@ export default function App() {
         sender_name: name,
         sender_email: email,
         message: `
+          <p>Date: <strong>${date}</strong></p>
           <h1>Requests</h1>
           <ul>
             ${requestList}
@@ -96,6 +98,13 @@ export default function App() {
             className="input input-bordered"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            placeholder="Wedding Date"
+            className="input input-bordered"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
             required
           />
         </div>
