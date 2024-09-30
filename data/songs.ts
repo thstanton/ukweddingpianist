@@ -1632,5 +1632,14 @@ export const songData: Song[] = [
   { id: 340, title: "Wildest Dreams", artist: "Taylor Swift", genre: "Contemporary" },
   { id: 341, title: "Go The Distance", artist: "Hercules", genre: "Film, TV and Musicals" },
   { id: 342, title: "Blank Space", artist: "Taylor Swift", genre: "Contemporary" },
+  { id: 343, title: "Never Let Me Go", artist: "Florence & The Machine", genre: "Contemporary" },
+  { id: 344, title: "The Avengers", artist: "Alan Silvestri", genre: "Film, TV and Musicals" },
+  { id: 345, title: "Adieux", artist: "Einaudi", genre: "Classical" },
+  { id: 346, title: "Formula 1 Theme", artist: "Brian Tyler", genre: "Film, TV and Musicals" },
+  { id: 347, title: "With Or Without You", artist: "U2", genre: "Contemporary" },
+  { id: 348, title: "Today Was A Fairytale", artist: "Taylor Swift", genre: "Contemporary" },
+  { id: 349, title: "Birds Of A Feather", artist: "Billie Eilish", genre: "Contemporary" },
+  { id: 350, title: "Love Me Like You Do", artist: "Brooklyn Duo", genre: "Contemporary" },
+  
   
 ];
