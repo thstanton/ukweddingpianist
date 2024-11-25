@@ -1640,6 +1640,18 @@ export const songData: Song[] = [
   { id: 348, title: "Today Was A Fairytale", artist: "Taylor Swift", genre: "Contemporary" },
   { id: 349, title: "Birds Of A Feather", artist: "Billie Eilish", genre: "Contemporary" },
   { id: 350, title: "Love Me Like You Do", artist: "Brooklyn Duo", genre: "Contemporary" },
-  
+  { id: 351, title: "Dandelions", artist: "Ruth B", genre: "Contemporary" },
+  { id: 352, title: "Chi Mai", artist: "Ennio Morricone", genre: "Film, TV and Musicals" },
+  { id: 353, title: "A Comme Amour", artist: "Richard Clayderman", genre: "Classical" },
+  { id: 354, title: "The Look Of Love", artist: "Burt Bacharach", genre: "Jazz" },
+  { id: 355, title: "A Wink And A Smile", artist: "Sleepless in Seattle", genre: "Film, TV and Musicals" },
+  { id: 356, title: "Paradise", artist: "Coldplay", genre: "Contemporary" },
+  { id: 357, title: "Love Story", artist: "Taylor Swift", genre: "Contemporary" },
+  { id: 358, title: "Tea For Two", artist: "Irving Caesar", genre: "Jazz" },
+  { id: 359, title: "You Make Me Feel So Young", artist: "Frank Sinatra", genre: "Jazz" },
+  { id: 360, title: "Blue Moon", artist: "Billie Holiday", genre: "Jazz" },
+  { id: 361, title: "Moonriver", artist: "Henry Mancini", genre: "Jazz" },
+  { id: 362, title: "Sway", artist: "Michael Buble", genre: "Jazz" },
+  { id: 363, title: "Volare", artist: "Domenico Modugno", genre: "Jazz" },
   
 ];
