@@ -1653,5 +1653,7 @@ export const songData: Song[] = [
   { id: 361, title: "Moonriver", artist: "Henry Mancini", genre: "Jazz" },
   { id: 362, title: "Sway", artist: "Michael Buble", genre: "Jazz" },
   { id: 363, title: "Volare", artist: "Domenico Modugno", genre: "Jazz" },
+  { id: 364, title: "Defying Gravity", artist: "Wicked", genre: "Film, TV and Musicals" },
+  { id: 365, title: "For Good", artist: "Wicked", genre: "Film, TV and Musicals" },
   
 ];
