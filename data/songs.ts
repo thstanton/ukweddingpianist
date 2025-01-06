@@ -1655,5 +1655,8 @@ export const songData: Song[] = [
   { id: 363, title: "Volare", artist: "Domenico Modugno", genre: "Jazz" },
   { id: 364, title: "Defying Gravity", artist: "Wicked", genre: "Film, TV and Musicals" },
   { id: 365, title: "For Good", artist: "Wicked", genre: "Film, TV and Musicals" },
+  { id: 366, title: "Bridal Chorus", artist: "Wagner", genre: "Classical" }, 
+  { id: 367, title: "The Promise", artist: "Alexis Ffrench", genre: "Classical" },
+
   
 ];
