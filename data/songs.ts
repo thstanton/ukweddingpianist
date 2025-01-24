@@ -1657,6 +1657,16 @@ export const songData: Song[] = [
   { id: 365, title: "For Good", artist: "Wicked", genre: "Film, TV and Musicals" },
   { id: 366, title: "Bridal Chorus", artist: "Wagner", genre: "Classical" }, 
   { id: 367, title: "The Promise", artist: "Alexis Ffrench", genre: "Classical" },
+  { id: 368, title: "Butterfly Waltz", artist: "Brian Crain", genre: "Classical" },
+  { id: 369, title: "Je Te Lassaerai Des Mots", artist: "Patrick Wilson", genre: "Classical" },
+  { id: 370, title: "Nocturne in C", artist: "Grieg", genre: "Classical" },
+  { id: 371, title: "Real Love", artist: "John Lennon", genre: "Contemporary" },
+  { id: 372, title: "How Far I'll Go", artist: "Moana", genre: Film, TV and Musicals" },
+  { id: 373, title: "Higher Love", artist: "Steve Winwood", genre: "Contemporary" },
+  { id: 374, title: "Shut Up And Dance", artist: "Walk the Moon", genre: "Contemporary" },
+  { id: 375, title: "Champagne Supernova", artist: "Oasis", genre: "Contemporary" },
+  { id: 376, title: "Friday I'm In Love", artist: "The Cure", genre: "Contemporary" },
+    
 
   
 ];
