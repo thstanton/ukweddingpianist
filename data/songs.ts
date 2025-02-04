@@ -1666,6 +1666,7 @@ export const songData: Song[] = [
   { id: 374, title: "Shut Up And Dance", artist: "Walk the Moon", genre: "Contemporary" },
   { id: 375, title: "Champagne Supernova", artist: "Oasis", genre: "Contemporary" },
   { id: 376, title: "Friday I'm In Love", artist: "The Cure", genre: "Contemporary" },
+  { id: 377, title: "Moments of Pleasure", artist: "Kate Bush", genre: "Contemporary" },
     
 
   
