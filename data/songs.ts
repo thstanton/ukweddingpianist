@@ -1667,6 +1667,10 @@ export const songData: Song[] = [
   { id: 375, title: "Champagne Supernova", artist: "Oasis", genre: "Contemporary" },
   { id: 376, title: "Friday I'm In Love", artist: "The Cure", genre: "Contemporary" },
   { id: 377, title: "Moments of Pleasure", artist: "Kate Bush", genre: "Contemporary" },
+  { id: 378, title: "Buy Dirt", artist: "Jordan Davis", genre: "Contemporary" },
+  { id: 379, title: "Le Monde Est A Mes Pieds", artist: "Scylla", genre: "Contemporary" },
+  { id: 380, title: "Barcelona", artist: "Ed Sheeran", genre: "Contemporary" },
+  
     
 
   
