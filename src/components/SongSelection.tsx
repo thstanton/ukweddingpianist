@@ -1,6 +1,8 @@
 import { useSearchParams } from "react-router-dom";
 import SelectSongType, { Genre } from "./SelectSongType";
 import { useMemo, useState } from "react";
+import FormSection from "./FormSection";
+import SectionHeader from "./SectionHeader";
 
 export default function SongSelection() {
   const [searchParams] = useSearchParams();
@@ -20,27 +22,26 @@ export default function SongSelection() {
   const [selectedGenre, setSelectedGenre] = useState<Genre>("Contemporary");
 
   return (
-    <div className="mb-3 min-h-96 rounded-xl border-2 border-solid border-neutral-200 p-4">
-      <h1 className="mb-3 font-bold">
-        Select the songs you would like me to play
-      </h1>
+    <FormSection>
+      <SectionHeader>Select the songs you would like me to play</SectionHeader>
       <div
         role="tablist"
-        className="tabs tabs-bordered tabs-xs flex w-full md:tabs-md lg:tabs-lg"
+        className="tabs tabs-border tabs-xs flex w-full md:tabs-md lg:tabs-lg"
       >
         {genreList.map((genre) => (
           <input
             key={genre}
             type="radio"
-            name={genre}
+            name="genres"
             role="tab"
-            className={`tab flex-auto ${selectedGenre === genre ? "tab-active" : ""}`}
+            checked={genre === selectedGenre}
+            className="tab flex-auto"
             aria-label={genre}
             onClick={() => setSelectedGenre(genre)}
           />
         ))}
       </div>
       <SelectSongType genre={selectedGenre} />
-    </div>
+    </FormSection>
   );
 }

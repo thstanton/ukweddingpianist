@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useForm } from "../hooks/useForm";
+import FormSection from "./FormSection";
+import SectionHeader from "./SectionHeader";
 
 interface SelectSongEventProps {
   state: string;
@@ -27,41 +29,43 @@ export default function SelectSongEvent({
   }
 
   return (
-    <div className="mb-3 rounded-xl border-2 border-solid border-neutral-200 p-4">
-      <h1 className="font-bold">Choose your {event} song:</h1>
+    <FormSection>
+      <SectionHeader>Choose your {event} song:</SectionHeader>
       <p className="mb-3 text-sm font-extralight italic">
         Select from the list or select 'other' to enter a request
       </p>
-      <select
-        className="select select-bordered mb-3 mr-3 grow"
-        defaultValue="Choose song"
-        value={selectedOption}
-        onChange={handleSelection}
-      >
-        <option disabled>Choose song</option>
-        {songs
-          .filter((song) => song.checked)
-          .map((song, idx) => (
-            <option
-              value={
-                song.artist ? `${song.title} - ${song.artist}` : song.title
-              }
-              key={idx}
-            >
-              {song.artist ? `${song.title} - ${song.artist}` : song.title}
-            </option>
-          ))}
-        <option>Other</option>
-      </select>
-      {selectedOption === "Other" && (
-        <input
-          type="text"
-          className="input input-bordered"
-          value={state}
-          placeholder="Enter your request here"
-          onChange={handleInputChange}
-        />
-      )}
-    </div>
+      <div className="flex items-center mb-3">
+        <select
+          className="select select-bordered mr-3"
+          defaultValue="Choose song"
+          value={selectedOption}
+          onChange={handleSelection}
+        >
+          <option disabled>Choose song</option>
+          {songs
+            .filter((song) => song.checked)
+            .map((song, idx) => (
+              <option
+                value={
+                  song.artist ? `${song.title} - ${song.artist}` : song.title
+                }
+                key={idx}
+              >
+                {song.artist ? `${song.title} - ${song.artist}` : song.title}
+              </option>
+            ))}
+          <option>Other</option>
+        </select>
+        {selectedOption === "Other" && (
+          <input
+            type="text"
+            className="input input-bordered"
+            value={state}
+            placeholder="Enter your request here"
+            onChange={handleInputChange}
+          />
+        )}
+      </div>
+    </FormSection>
   );
 }

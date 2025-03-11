@@ -1,4 +1,6 @@
 import { useForm } from "../hooks/useForm";
+import FormSection from "./FormSection";
+import SectionHeader from "./SectionHeader";
 import SelectSongEvent from "./SelectSongEvent";
 import SongSelection from "./SongSelection";
 import { useNavigate } from "react-router-dom";
@@ -32,8 +34,8 @@ export default function Form() {
       onSubmit={(e) => handleSubmit(e).then(() => navigate("/complete"))}
       className="flex flex-col"
     >
-      <div className="mb-3 flex flex-col gap-3 rounded-xl border-2 border-solid border-neutral-200 p-4">
-        <h1 className="mb-3 font-bold">Enter your details:</h1>
+      <FormSection>
+        <SectionHeader>Enter your details:</SectionHeader>
         <input
           placeholder="Your Name"
           className="input input-bordered"
@@ -55,7 +57,7 @@ export default function Form() {
           onChange={(e) => setDate(e.target.value)}
           required
         />
-      </div>
+      </FormSection>
       <SongSelection />
       {/* Processional, signing register x3, recessional */}
       <SelectSongEvent
@@ -85,13 +87,16 @@ export default function Form() {
       />
 
       {/* Notes / comments */}
-      <textarea
-        className="textarea textarea-bordered mb-3"
-        rows={4}
-        placeholder="Enter any notes you have for me here"
-        value={notes}
-        onChange={(e) => setNotes(e.target.value)}
-      />
+      <FormSection>
+        <SectionHeader>Notes:</SectionHeader>
+        <textarea
+          className="textarea textarea-bordered mb-3 w-full"
+          rows={4}
+          placeholder="Enter any notes you have for me here"
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
+        />
+      </FormSection>
 
       {/* Submit Button */}
       <button type="submit" className="btn btn-primary mb-3">

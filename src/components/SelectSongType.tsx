@@ -32,7 +32,7 @@ export default function SelectSongType({ genre }: SelectSongTypeProps) {
       <div className="flex w-full flex-col flex-wrap md:flex-row">
         {genreSongs.map((song) => (
           <label
-            className="label w-full cursor-pointer justify-start gap-2 md:w-1/2 xl:w-1/4"
+            className="label w-full cursor-pointer justify-start pb-2 md:w-1/2 xl:w-1/3"
             key={song.id}
           >
             <input
