@@ -37,7 +37,7 @@ export default function SongSelection() {
             checked={genre === selectedGenre}
             className="tab flex-auto"
             aria-label={genre}
-            onClick={() => setSelectedGenre(genre)}
+            onChange={() => setSelectedGenre(genre)}
           />
         ))}
       </div>
