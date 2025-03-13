@@ -10,6 +10,8 @@ import {
 import { Song, songData } from "../../data/songs";
 
 interface FormContext {
+  theme: Theme;
+  setTheme: Dispatch<SetStateAction<Theme>>;
   name: string;
   setName: Dispatch<SetStateAction<string>>;
   email: string;
@@ -33,9 +35,12 @@ interface FormContext {
   handleSubmit: (e: FormEvent<HTMLFormElement>) => Promise<void>;
 }
 
+type Theme = "UkWeddingPianist" | "MaryleboneDuo";
+
 export const FormContext = createContext<FormContext | null>(null);
 
 export const FormContextProvider = ({ children }: { children: ReactNode }) => {
+  const [theme, setTheme] = useState<Theme>("UkWeddingPianist");
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [date, setDate] = useState<string>("");
@@ -106,6 +111,8 @@ export const FormContextProvider = ({ children }: { children: ReactNode }) => {
   return (
     <FormContext.Provider
       value={{
+        theme,
+        setTheme,
         name,
         setName,
         email,

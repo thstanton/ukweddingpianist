@@ -31,12 +31,12 @@ export default function SelectSongEvent({
   return (
     <FormSection>
       <SectionHeader>Choose your {event} song:</SectionHeader>
-      <p className="mb-3 text-sm font-extralight italic">
+      <p className="font-extralight text-neutral-500">
         Select from the list or select 'other' to enter a request
       </p>
       <div className="flex items-center mb-3">
         <select
-          className="select select-bordered mr-3"
+          className="select select-bordered mr-3 font-sans"
           defaultValue="Choose song"
           value={selectedOption}
           onChange={handleSelection}

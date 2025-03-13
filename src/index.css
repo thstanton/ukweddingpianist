@@ -1,8 +1,11 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import "tailwindcss";
 
 @plugin 'daisyui' {
-    themes: light --default;
-};
+  themes:
+    ukwp --default,
+    mbduo;
+}
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
@@ -20,4 +23,68 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
+
+@font-face {
+  font-family: "Safira";
+  src: url("/fonts/safiramarch.ttf") format("truetype");
+}
+
+[data-theme="ukwp"] {
+  --font-display: "Safira", Georgia, serif;
+  --font-serif: "EB Garamond", Georgia, serif;
+}
+
+@plugin "daisyui/theme" {
+  name: "ukwp";
+  default: true;
+  prefers-dark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(0.985 0 0);
+  --color-base-200: oklch(0.869 0.005 56.366);
+  --color-base-300: oklch(92% 0.04 240);
+  --color-base-content: oklch(20% 0.05 240);
+
+  /* border radius */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  /* base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* border size */
+  --border: 1px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "mbduo";
+  default: true;
+  prefers-dark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(0.627 0.194 149.214);
+  --color-base-200: oklch(0.869 0.005 56.366);
+  --color-base-300: oklch(92% 0.04 240);
+  --color-base-content: oklch(20% 0.05 240);
+
+  /* border radius */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  /* base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* border size */
+  --border: 1px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0;
 }
