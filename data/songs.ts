@@ -1670,6 +1670,9 @@ export const songData: Song[] = [
   { id: 378, title: "Buy Dirt", artist: "Jordan Davis", genre: "Contemporary" },
   { id: 379, title: "Le Monde Est A Mes Pieds", artist: "Scylla", genre: "Contemporary" },
   { id: 380, title: "Barcelona", artist: "Ed Sheeran", genre: "Contemporary" },
+  { id: 381, title: "Paradise", artist: "Coldplay", genre: "Contemporary" },
+  { id: 382, title: "Forces of Attraction", artist: "Theory of Everything", genre: "Film, TV and Musicals" },
+  
   
     
 
