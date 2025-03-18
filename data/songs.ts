@@ -401,7 +401,7 @@ export const songData: Song[] = [
     artist: "Calvin Harris",
     genre: "Contemporary",
   },
-  { id: 69, title: "Only You", artist: "Yahoo", genre: "Contemporary" },
+  { id: 69, title: "Only You", artist: "Yazoo", genre: "Contemporary" },
   {
     id: 70,
     title: "Ordinary People",
