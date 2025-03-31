@@ -1673,6 +1673,10 @@ export const songData: Song[] = [
   { id: 381, title: "Paradise", artist: "Coldplay", genre: "Contemporary" },
   { id: 382, title: "Forces of Attraction", artist: "Theory of Everything", genre: "Film, TV and Musicals" },
   { id: 383, title: "Have I Told You Lately", artist: "Van Morrison", genre: "Jazz" },
+  { id: 384, title: "Golden Hour", artist: "JVKE", genre: "Contemporary" },
+  { id: 385, title: "Icarus", artist: "Tony Ann", genre: "Classical" },
+  
+  
   
   
     
