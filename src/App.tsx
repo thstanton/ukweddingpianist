@@ -29,7 +29,7 @@ export default function App() {
 
   return (
     <main className="bg-base-100">
-      <div className="px-10 pt-3 pb-8">
+      <div className="px-4 md:px-10 pt-3 pb-8">
         <Header />
         <Form />
       </div>

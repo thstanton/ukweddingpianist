@@ -28,7 +28,7 @@ export default function SelectSongType({ genre }: SelectSongTypeProps) {
   };
 
   return (
-    <div role="tabpanel" className="w-full p-6">
+    <div role="tabpanel" className="w-full p-2 md:p-6">
       <div className="flex w-full flex-col flex-wrap md:flex-row">
         {genreSongs.map((song) => (
           <label
