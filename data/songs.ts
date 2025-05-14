@@ -1865,10 +1865,11 @@ export const songData: Song[] = [
   },
   { id: 384, title: "Golden Hour", artist: "JVKE", genre: "Contemporary" },
   { id: 385, title: "Icarus", artist: "Tony Ann", genre: "Classical" },
-  {
-    id: 386,
-    title: "Another Love",
-    artist: "Tom Odell",
-    genre: "Contemporary",
-  },
+  {  id: 386,  title: "Another Love",  artist: "Tom Odell",  genre: "Contemporary",  },
+  { id: 387, title: "Skinny Love", artist: "Bon Iver", genre: "Contemporary", },
+  { id: 388, title: "Hey Ma", artist: "Bon Iver", genre: "Contemporary", },
+  { id: 389, title: "Never Enough", artist: "Greatest Showman", genre: "Film, TV and Musicals", },
+  { id: 390, title: "Ordinary", artist: "Alex Warren", genre: "Contemporary", },
+  
+  
 ];
