@@ -1870,6 +1870,7 @@ export const songData: Song[] = [
   { id: 388, title: "Hey Ma", artist: "Bon Iver", genre: "Contemporary", },
   { id: 389, title: "Never Enough", artist: "Greatest Showman", genre: "Film, TV and Musicals", },
   { id: 390, title: "Ordinary", artist: "Alex Warren", genre: "Contemporary", },
+  { id: 391, title: "I See The Light", artist: "Tangled", genre: "Film, TV and Musicals", },
   
   
 ];
