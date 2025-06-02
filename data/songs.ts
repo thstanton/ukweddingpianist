@@ -1850,7 +1850,7 @@ export const songData: Song[] = [
     genre: "Contemporary",
   },
   { id: 380, title: "Barcelona", artist: "Ed Sheeran", genre: "Contemporary" },
-  { id: 381, title: "Paradise", artist: "Coldplay", genre: "Contemporary" },
+
   {
     id: 382,
     title: "Forces of Attraction",
@@ -1865,10 +1865,12 @@ export const songData: Song[] = [
   },
   { id: 384, title: "Golden Hour", artist: "JVKE", genre: "Contemporary" },
   { id: 385, title: "Icarus", artist: "Tony Ann", genre: "Classical" },
-  {
-    id: 386,
-    title: "Another Love",
-    artist: "Tom Odell",
-    genre: "Contemporary",
-  },
+  {  id: 386,  title: "Another Love",  artist: "Tom Odell",  genre: "Contemporary",  },
+  { id: 387, title: "Skinny Love", artist: "Bon Iver", genre: "Contemporary", },
+  { id: 388, title: "Hey Ma", artist: "Bon Iver", genre: "Contemporary", },
+  { id: 389, title: "Never Enough", artist: "Greatest Showman", genre: "Film, TV and Musicals", },
+  { id: 390, title: "Ordinary", artist: "Alex Warren", genre: "Contemporary", },
+  { id: 391, title: "I See The Light", artist: "Tangled", genre: "Film, TV and Musicals", },
+  
+  
 ];
