@@ -1850,7 +1850,7 @@ export const songData: Song[] = [
     genre: "Contemporary",
   },
   { id: 380, title: "Barcelona", artist: "Ed Sheeran", genre: "Contemporary" },
-  { id: 381, title: "Paradise", artist: "Coldplay", genre: "Contemporary" },
+
   {
     id: 382,
     title: "Forces of Attraction",
