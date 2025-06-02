@@ -16,7 +16,10 @@ interface SelectSongTypeProps {
 export default function SelectSongType({ genre }: SelectSongTypeProps) {
   const { songs, setSongs } = useForm();
   const genreSongs = useMemo(
-    () => songs.filter((song) => song.genre === genre),
+    () =>
+      songs
+        .filter((song) => song.genre === genre)
+        .sort((a, b) => a.title.localeCompare(b.title)),
     [songs, genre],
   );
 
