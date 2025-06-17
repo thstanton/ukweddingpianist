@@ -1871,6 +1871,9 @@ export const songData: Song[] = [
   { id: 389, title: "Never Enough", artist: "Greatest Showman", genre: "Film, TV and Musicals", },
   { id: 390, title: "Ordinary", artist: "Alex Warren", genre: "Contemporary", },
   { id: 391, title: "I See The Light", artist: "Tangled", genre: "Film, TV and Musicals", },
+  { id: 392, title: "Concerning Hobbits", artist: "Lord Of The Rings", genre: "Film, TV and Musicals", },
+  { id: 393, title: "Arrival of the Birds", artist: "Cinematic Orchestra", genre: "Film, TV and Musicals", },
+
   
   
 ];
