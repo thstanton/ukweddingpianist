@@ -1873,6 +1873,8 @@ export const songData: Song[] = [
   { id: 391, title: "I See The Light", artist: "Tangled", genre: "Film, TV and Musicals", },
   { id: 392, title: "Concerning Hobbits", artist: "Lord Of The Rings", genre: "Film, TV and Musicals", },
   { id: 393, title: "Arrival of the Birds", artist: "Cinematic Orchestra", genre: "Film, TV and Musicals", },
+  { id: 394, title: "Espresso", artist: "Sabrina Carpenter", genre: "Contemporary", },
+  { id: 395, title: "Wonderwall", artist: "Oasis", genre: "Contemporary", },
 
   
   
