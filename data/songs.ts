@@ -1875,7 +1875,11 @@ export const songData: Song[] = [
   { id: 393, title: "Arrival of the Birds", artist: "Cinematic Orchestra", genre: "Film, TV and Musicals", },
   { id: 394, title: "Espresso", artist: "Sabrina Carpenter", genre: "Contemporary", },
   { id: 395, title: "Wonderwall", artist: "Oasis", genre: "Contemporary", },
-
+  { id: 396, title: "Pink Pony Club", artist: "Chappell Roan", genre: "Contemporary", },
+  { id: 397, title: "Never Gonna Give You Up", artist: "Rick Astley", genre: "Contemporary", },
+  { id: 398, title: "Tujh Mein Rab Dikhta Hai", artist: "Roopkumar Rathod", genre: "Bollywood", },
+  { id: 399, title: "Aajkal Tere Mere Pyaar Ke Charche", artist: "Mohammed Rafi", genre: "Bollywood", },
+  { id: 400, title: "Dream A Little Dream Of Me", artist: "Louis Armstrong", genre: "Jazz", },
   
   
 ];
