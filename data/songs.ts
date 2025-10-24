@@ -1880,6 +1880,11 @@ export const songData: Song[] = [
   { id: 398, title: "Tujh Mein Rab Dikhta Hai", artist: "Roopkumar Rathod", genre: "Bollywood", },
   { id: 399, title: "Aajkal Tere Mere Pyaar Ke Charche", artist: "Mohammed Rafi", genre: "Bollywood", },
   { id: 400, title: "Dream A Little Dream Of Me", artist: "Louis Armstrong", genre: "Jazz", },
+  { id: 401, title: "Fields of Gold", artist: "Sting", genre: "Contemporary", },
+  { id: 402, title: "You're The First, The Last, My Everything", artist: "Barry White", genre: "Contemporary", },
+  { id: 403, title: "Half The World Away", artist: "Oasis", genre: "Contemporary", },
+  { id: 404, title: "Still Into You", artist: "Paramore", genre: "Contemporary", },
+  { id: 405, title: "She's Electric", artist: "Oasis", genre: "Contemporary", },
   
   
 ];
