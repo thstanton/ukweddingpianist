@@ -1885,6 +1885,12 @@ export const songData: Song[] = [
   { id: 403, title: "Half The World Away", artist: "Oasis", genre: "Contemporary", },
   { id: 404, title: "Still Into You", artist: "Paramore", genre: "Contemporary", },
   { id: 405, title: "She's Electric", artist: "Oasis", genre: "Contemporary", },
+  { id: 406, title: "Honour Him", artist: "Gladiator", genre: "Film, TV and Musicals", ],
+  { id: 407, title: "Mia & Sebastian's Theme", artist: "La La Land", genre: "Film, TV and Musicals", },
+  { id: 408, title: "You're The First, Last, My Everything", artist: "Barry White", genre: "Contemporary", },
+  { id: 409, title: "Man I Need", artist: "Olivia Dean", genre: "Contemporary", },
+  
+   
   
   
 ];
