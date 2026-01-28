@@ -1889,6 +1889,9 @@ export const songData: Song[] = [
   { id: 407, title: "Mia & Sebastian's Theme", artist: "La La Land", genre: "Film, TV and Musicals", },
   { id: 408, title: "You're The First, Last, My Everything", artist: "Barry White", genre: "Contemporary", },
   { id: 409, title: "Man I Need", artist: "Olivia Dean", genre: "Contemporary", },
+  { id: 410, title: "So Easy (To Fall In Love)", artist: "Olivia Dean", genre: "Contemporary", },
+  { id: 411, title: "Is This Love", artist: "Luke Burr", genre: "Contemporary", },
+  
   
    
   
