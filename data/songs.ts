@@ -1891,6 +1891,7 @@ export const songData: Song[] = [
   { id: 409, title: "Man I Need", artist: "Olivia Dean", genre: "Contemporary", },
   { id: 410, title: "So Easy (To Fall In Love)", artist: "Olivia Dean", genre: "Contemporary", },
   { id: 411, title: "Is This Love", artist: "Luke Burr", genre: "Contemporary", },
+  { id: 412, title: "O Mio Babbino Caro", artist: "Puccini", genre: "Classical", },
   
   
    
