@@ -1892,8 +1892,14 @@ export const songData: Song[] = [
   { id: 410, title: "Is This Love", artist: "Luke Burr", genre: "Contemporary", },
   { id: 411, title: "O Mio Babbino Caro", artist: "Puccini", genre: "Classical", },
   { id: 412, title: "I'll Be There For You", artist: "Friends", genre: "Film, TV and Musicals", },
-  
-  
+  { id: 413, title: "Pyramid Song", artist: "Radiohead", genre: "Contemporary", },
+  { id: 414, title: "Cloudbusting", artist: "Kate Bush", genre: "Contemporary", },
+  { id: 415, title: "Nightbook", artist: "Einaudi", genre: "Classical", },
+  { id: 416, title: "La Nascita Delle Cose Segrete", artist: "Einaudi", genre: "Classical", },
+  { id: 417, title: "XO", artist: "Beyonce", genre: "Contemporary", },
+  { id: 418, title: "Forever After All", artist: "Luke Combs", genre: "Contemporary", },
+  { id: 419, title: "Rockin' All Over The World", artist: "Status Quo", genre: "Contemporary", },
+  { id: 420, title: "Invisible String", artist: "Taylor Swift", genre: "Contemporary", },
    
   
   
