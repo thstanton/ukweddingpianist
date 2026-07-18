@@ -1900,6 +1900,10 @@ export const songData: Song[] = [
   { id: 418, title: "Forever After All", artist: "Luke Combs", genre: "Contemporary", },
   { id: 419, title: "Rockin' All Over The World", artist: "Status Quo", genre: "Contemporary", },
   { id: 420, title: "Invisible String", artist: "Taylor Swift", genre: "Contemporary", },
+  { id: 421, title: "Pyramid Song", artist: "Radiohead", genre: "Contemporary", },
+  { id: 422, title: "Piece Of My Heart", artist: "Erma Franklin", genre: "Contempoary", },
+  { id: 423, title: "One Day Like This", artist: "Elbow", genre: "Contemporary", },
+
    
   
   
